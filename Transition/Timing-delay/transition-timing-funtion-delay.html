@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>timing-delay</title>
+    <style>
+        .container{
+            background: papayawhip;
+        }
+        .container:hover .circel{
+            transform: translateX(400px);
+        }
+        .circel{
+            width: 50px;
+            height: 50px;
+            border-radius: 50%;
+        }
+        .one{
+            background: blue;
+            transition: transform 1s linear;
+            transition-delay: 0.5s;
+        }
+        .two{
+            background: red;
+            transition: transform 1s ease;
+            transition-delay: 1s;
+        }
+        .three{
+            background: yellow;
+            transition: transform 1.5s ease-in;
+            transition-delay: 1.5s;
+        }
+        .four{
+            background: green;
+            transition: transform 2s ease-out;
+            transition-delay: 2s;
+        }
+        .five{
+            background: orange;
+            transition: transform 1s ease-in-out;
+            transition-delay: 2.5s;
+        }
+        .six{
+            background: black;
+            transition: transform 1s cubic-bezier(.74,-0.92,.64,2.2);
+            transition-delay: 3s;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="circel one "></div>
+        <div class="circel two "></div>
+        <div class="circel three "></div>
+        <div class="circel four "></div>
+        <div class="circel five "></div>
+        <div class="circel six "></div>
+        
+    </div>
+</body>
+</html>
